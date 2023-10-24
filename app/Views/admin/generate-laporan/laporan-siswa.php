@@ -6,7 +6,7 @@
       <td><img src="<?= base_url('public/assets/img/logo_sekolah.jpg'); ?>" width="100px" height="100px"></img></td>
       <td width="100%">
          <h2 align="center">DAFTAR HADIR SISWA</h2>
-         <h4 align="center">STM KEREN</h4>
+         <h4 align="center">DIGITAL VISIONER</h4>
          <h4 align="center">TAHUN PELAJARAN 2022/2023</h4>
       </td>
       <td>
@@ -15,7 +15,7 @@
    </tr>
 </table>
 <span>Bulan : <?= $bulan; ?></span>
-<span style="position: absolute;right: 0;">Kelas : <?= "{$kelas['kelas']} {$kelas['jurusan']}"; ?></span>
+<span style="position: absolute;right: 0;">Tim : <?= "{$kelas['kelas']} {$kelas['jurusan']}"; ?></span>
 <table align="center" border="1">
    <tr>
       <td></td>
@@ -55,7 +55,7 @@
 <br></br>
 <table>
    <tr>
-      <td>Jumlah siswa</td>
+      <td>Jumlah pegawai</td>
       <td>: <?= count($listSiswa); ?></td>
    </tr>
    <tr>

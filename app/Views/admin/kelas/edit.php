@@ -6,7 +6,7 @@
       <div class="col-lg-12 col-md-12">
         <div class="card">
           <div class="card-header card-header-primary">
-            <h4 class="card-title"><b>Form Edit Kelas</b></h4>
+            <h4 class="card-title"><b>Form Edit Tim</b></h4>
           </div>
           <div class="card-body mx-5 my-3">
 
@@ -27,7 +27,7 @@
               <?php endif; ?>
 
               <div class="form-group mt-4">
-                <label for="kelas">Kelas / Tingkat</label>
+                <label for="kelas">Tim</label>
                 <input type="text" id="kelas" class="form-control <?= $validation->getError('kelas') ? 'is-invalid' : ''; ?>" name="kelas" placeholder="'X', 'XI', '11'" value="<?= old('kelas') ?? $oldInput['kelas'] ?? $data['kelas'] ?>">
                 <div class="invalid-feedback">
                   <?= $validation->getError('kelas'); ?>
@@ -35,9 +35,9 @@
               </div>
               <div class="row">
                 <div class="col-12">
-                  <label for="idJurusan">Jurusan</label>
+                  <label for="idJurusan">Divisi</label>
                   <select class="custom-select <?= $validation->getError('idJurusan') ? 'is-invalid' : ''; ?>" id="idJurusan" name="idJurusan">
-                    <option value="">--Pilih idJurusan--</option>
+                    <option value="">--Pilih Divisi--</option>
                     <?php foreach ($jurusan as $value) : ?>
                       <option value="<?= $value['id']; ?>" <?= old('idJurusan') ?? $oldInput['idJurusan'] ?? $value['id'] == $data['id_jurusan'] ? 'selected' : ''; ?>>
                         <?= $value['jurusan']; ?>

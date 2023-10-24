@@ -6,7 +6,7 @@
          <div class="col-lg-12 col-md-12">
             <div class="card">
                <div class="card-header card-header-primary">
-                  <h4 class="card-title"><b>Form Tambah Siswa</b></h4>
+                  <h4 class="card-title"><b>Form Tambah Pegawai</b></h4>
                   <!-- <p class="card-category">Angkatan 2022/2023</p> -->
                </div>
                <div class="card-body mx-5 my-3">
@@ -27,7 +27,7 @@
                      <?php endif; ?>
 
                      <div class="form-group mt-4">
-                        <label for="nis">NIS</label>
+                        <label for="nis">NIP</label>
                         <input type="text" id="nis" class="form-control <?= $validation->getError('nis') ? 'is-invalid' : ''; ?>" name="nis" placeholder="1234" value="<?= old('nis') ?? $oldInput['nis']  ?? '' ?>">
                         <div class="invalid-feedback">
                            <?= $validation->getError('nis'); ?>
@@ -43,9 +43,9 @@
                      </div>
                      <div class="row">
                         <div class="col-md-6">
-                           <label for="kelas">Kelas</label>
+                           <label for="kelas">Tim</label>
                            <select class="custom-select <?= $validation->getError('id_kelas') ? 'is-invalid' : ''; ?>" id="kelas" name="id_kelas">
-                              <option value="">--Pilih kelas--</option>
+                              <option value="">--Pilih tim--</option>
                               <?php foreach ($kelas as $value) : ?>
                                  <option value="<?= $value['id_kelas']; ?>" <?= old('id_kelas') ?? $oldInput['id_kelas'] ?? '' == $value['id_kelas'] ? 'selected' : ''; ?>>
                                     <?= $value['kelas'] . ' ' . $value['jurusan']; ?>

@@ -50,7 +50,7 @@ class DataSiswa extends BaseController
    public function index()
    {
       $data = [
-         'title' => 'Data Siswa',
+         'title' => 'Data Pegawai',
          'ctx' => 'siswa',
          'kelas' => $this->kelasModel->getAllKelas(),
          'jurusan' => $this->jurusanModel->findAll()
@@ -81,7 +81,7 @@ class DataSiswa extends BaseController
       $data = [
          'ctx' => 'siswa',
          'kelas' => $kelas,
-         'title' => 'Tambah Data Siswa'
+         'title' => 'Tambah Data Pegawai'
       ];
 
       return view('admin/data/create/create-data-siswa', $data);
@@ -96,7 +96,7 @@ class DataSiswa extends BaseController
          $data = [
             'ctx' => 'siswa',
             'kelas' => $kelas,
-            'title' => 'Tambah Data Siswa',
+            'title' => 'Tambah Data Pegawai',
             'validation' => $this->validator,
             'oldInput' => $this->request->getVar()
          ];
@@ -139,7 +139,7 @@ class DataSiswa extends BaseController
          'data' => $siswa,
          'kelas' => $kelas,
          'ctx' => 'siswa',
-         'title' => 'Edit Siswa',
+         'title' => 'Edit Pegawai',
       ];
 
       return view('admin/data/edit/edit-data-siswa', $data);
@@ -164,7 +164,7 @@ class DataSiswa extends BaseController
             'data' => $siswa,
             'kelas' => $kelas,
             'ctx' => 'siswa',
-            'title' => 'Edit Siswa',
+            'title' => 'Edit Pegawai',
             'validation' => $this->validator,
             'oldInput' => $this->request->getVar()
          ];

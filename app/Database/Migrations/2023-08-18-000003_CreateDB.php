@@ -20,24 +20,15 @@ class CreateDB extends Migration
             (4, 'Tanpa keterangan');");
 
         $this->forge->getConnection()->query("INSERT INTO tb_jurusan (jurusan) VALUES
-            ('OTKP'),
-            ('BDP'),
-            ('AKL'),
-            ('RPL');");
-
+            ('Produksi'),
+            ('Akuntansi'),
+            ('Pemasaran');");
+            
         $this->forge->getConnection()->query("INSERT INTO tb_kelas (kelas, id_jurusan) VALUES
-            ('X', 1),
-            ('X', 2),
-            ('X', 3),
-            ('X', 4),
-            ('XI', 1),
-            ('XI', 2),
-            ('XI', 3),
-            ('XI', 4),
-            ('XII', 1),
-            ('XII', 2),
-            ('XII', 3),
-            ('XII', 4);");
+            ('Tim 1', 1),
+            ('Tim 1', 2),
+            ('Tim 1', 3),
+            ('Tim 2', 1);");
 
         $this->forge->getConnection()->query("CREATE TABLE tb_guru (
             id_guru int(11) NOT NULL,

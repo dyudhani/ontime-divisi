@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <!-- REKAP JUMLAH DATA -->
         <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="card card-stats">
                     <div class="card-header card-header-primary card-header-icon">
                         <div class="card-icon">
@@ -12,7 +12,7 @@
                                 <i class="material-icons">person</i>
                             </a>
                         </div>
-                        <p class="card-category">Jumlah siswa</p>
+                        <p class="card-category">Jumlah pegawai</p>
                         <h3 class="card-title"><?= count($siswa); ?></h3>
                     </div>
                     <div class="card-footer">
@@ -23,7 +23,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
+            <!-- <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="card card-stats">
                     <div class="card-header card-header-success card-header-icon">
                         <div class="card-icon">
@@ -41,8 +41,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
+            </div> -->
+            <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="card card-stats">
                     <div class="card-header card-header-info card-header-icon">
                         <div class="card-icon">
@@ -50,18 +50,18 @@
                                 <i class="material-icons">grade</i>
                             </a>
                         </div>
-                        <p class="card-category">Jumlah kelas</p>
+                        <p class="card-category">Jumlah Tim</p>
                         <h3 class="card-title"><?= count($kelas); ?></h3>
                     </div>
                     <div class="card-footer">
                         <div class="stats">
                             <i class="material-icons">home</i>
-                            STM REMAJA KEREN
+                            Digital Visioner
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="card card-stats">
                     <div class="card-header card-header-danger card-header-icon">
                         <div class="card-icon">
@@ -69,23 +69,23 @@
                                 <i class="material-icons">settings</i>
                             </a>
                         </div>
-                        <p class="card-category">Jumlah petugas</p>
+                        <p class="card-category">Jumlah admin</p>
                         <h3 class="card-title"><?= count($petugas); ?></h3>
                     </div>
                     <div class="card-footer">
                         <div class="stats">
                             <i class="material-icons">person</i>
-                            Petugas dan Administrator
+                            Administrator
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="card">
                     <div class="card-header card-header-primary">
-                        <h4 class="card-title"><b>Absensi Siswa Hari Ini</b></h4>
+                        <h4 class="card-title"><b>Absensi Pegawai Hari Ini</b></h4>
                         <p class="card-category"><?= $dateNow; ?></p>
                     </div>
                     <div class="card-body">
@@ -110,7 +110,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <!-- <div class="col-md-6">
                 <div class="card">
                     <div class="card-header card-header-success">
                         <h4 class="card-title"><b>Absensi Guru Hari Ini</b></h4>
@@ -137,18 +137,18 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- GRAFIK CHART -->
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="card card-chart">
                     <div class="card-header card-header-primary">
                         <div class="ct-chart" id="kehadiranSiswa"></div>
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title">Tingkat kehadiran siswa</h4>
-                        <p class="card-category">Jumlah kehadiran siswa dalam 7 hari terakhir</p>
+                        <h4 class="card-title">Tingkat kehadiran pegawai</h4>
+                        <p class="card-category">Jumlah kehadiran pegawai dalam 7 hari terakhir</p>
                     </div>
                     <div class="card-footer">
                         <div class="stats">
@@ -157,7 +157,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <!-- <div class="col-md-6">
                 <div class="card card-chart">
                     <div class="card-header card-header-success">
                         <div class="ct-chart" id="kehadiranGuru"></div>
@@ -172,7 +172,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>

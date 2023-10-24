@@ -50,7 +50,7 @@ class DataPetugas extends BaseController
       }
 
       $data = [
-         'title' => 'Data Petugas',
+         'title' => 'Data Admin',
          'ctx' => 'petugas'
       ];
 
@@ -94,7 +94,7 @@ class DataPetugas extends BaseController
       $data = [
          'data' => $petugas,
          'ctx' => 'petugas',
-         'title' => 'Edit Data Petugas',
+         'title' => 'Edit Data Admin',
       ];
 
       return view('admin/petugas/edit-data-petugas', $data);
@@ -119,7 +119,7 @@ class DataPetugas extends BaseController
          $data = [
             'data' => $this->petugasModel->getPetugasById($idPetugas),
             'ctx' => 'petugas',
-            'title' => 'Edit Data Petugas',
+            'title' => 'Edit Data Admin',
             'validation' => $this->validator,
             'oldInput' => $this->request->getVar()
          ];

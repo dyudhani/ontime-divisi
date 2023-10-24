@@ -28,7 +28,7 @@ switch ($context) {
     -->
    <div class="logo">
       <a class="simple-text logo-normal">
-         <b>Operator<br>Petugas Absensi</b>
+         <b>Operator<br>Admin Absensi</b>
       </a>
    </div>
    <div class="sidebar-wrapper">
@@ -42,31 +42,31 @@ switch ($context) {
          <li class="nav-item <?= $context == 'absen-siswa' ? 'active' : ''; ?>">
             <a class="nav-link" href="<?= base_url('admin/absen-siswa'); ?>">
                <i class="material-icons">checklist</i>
-               <p>Absensi Siswa</p>
+               <p>Absensi Pegawai</p>
             </a>
          </li>
-         <li class="nav-item <?= $context == 'absen-guru' ? 'active' : ''; ?>">
+         <!-- <li class="nav-item <?= $context == 'absen-guru' ? 'active' : ''; ?>">
             <a class="nav-link" href="<?= base_url('admin/absen-guru'); ?>">
                <i class="material-icons">checklist</i>
                <p>Absensi Guru</p>
             </a>
-         </li>
+         </li> -->
          <li class="nav-item <?= $context == 'siswa' ? 'active' : ''; ?>">
             <a class="nav-link" href="<?= base_url('admin/siswa'); ?>">
                <i class="material-icons">person</i>
-               <p>Data Siswa</p>
+               <p>Data Pegawai</p>
             </a>
          </li>
-         <li class="nav-item <?= $context == 'guru' ? 'active' : ''; ?>">
+         <!-- <li class="nav-item <?= $context == 'guru' ? 'active' : ''; ?>">
             <a class="nav-link" href="<?= base_url('admin/guru'); ?>">
                <i class="material-icons">person_4</i>
                <p>Data Guru</p>
             </a>
-         </li>
+         </li> -->
          <li class="nav-item <?= $context == 'kelas' ? 'active' : ''; ?>">
             <a class="nav-link" href="<?= base_url('admin/kelas'); ?>">
                <i class="material-icons">school</i>
-               <p>Data Kelas & Jurusan</p>
+               <p>Data Tim & Divisi</p>
             </a>
          </li>
          <li class="nav-item <?= $context == 'qr' ? 'active' : ''; ?>">
@@ -85,7 +85,7 @@ switch ($context) {
             <li class="nav-item <?= $context == 'petugas' ? 'active' : ''; ?>">
                <a class="nav-link" href="<?= base_url('admin/petugas'); ?>">
                   <i class="material-icons">computer</i>
-                  <p>Data Petugas</p>
+                  <p>Data Admin</p>
                </a>
             </li>
          <?php endif; ?>

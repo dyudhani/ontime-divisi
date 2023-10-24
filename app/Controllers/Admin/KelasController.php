@@ -27,7 +27,7 @@ class KelasController extends ResourceController
     public function index()
     {
         $data = [
-            'title' => 'Kelas & Jurusan',
+            'title' => 'Tim & Divisi',
             'ctx' => 'kelas',
         ];
 
@@ -65,7 +65,7 @@ class KelasController extends ResourceController
         $data = [
             'ctx' => 'kelas',
             'jurusan' => $jurusan,
-            'title' => 'Tambah Data Kelas',
+            'title' => 'Tambah Data Tim',
         ];
         return view('/admin/kelas/create', $data);
     }
@@ -90,7 +90,7 @@ class KelasController extends ResourceController
             $data = [
                 'ctx' => 'kelas',
                 'jurusan' => $jurusan,
-                'title' => 'Tambah Data Kelas',
+                'title' => 'Tambah Data Tim',
                 'validation' => $this->validator,
                 'oldInput' => $this->request->getVar()
             ];
@@ -137,7 +137,7 @@ class KelasController extends ResourceController
             'ctx' => 'kelas',
             'data' => $kelas,
             'jurusan' => $jurusan,
-            'title' => 'Edit Kelas',
+            'title' => 'Edit Tim',
         ];
         return view('/admin/kelas/edit', $data);
     }
@@ -168,7 +168,7 @@ class KelasController extends ResourceController
             $data = [
                 'ctx' => 'kelas',
                 'jurusan' => $jurusan,
-                'title' => 'Edit Kelas',
+                'title' => 'Edit Tim',
                 'data' => $kelas,
                 'validation' => $this->validator,
                 'oldInput' => $this->request->getRawInput()

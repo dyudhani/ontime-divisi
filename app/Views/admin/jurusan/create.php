@@ -6,7 +6,7 @@
       <div class="col-lg-12 col-md-12">
         <div class="card">
           <div class="card-header card-header-primary">
-            <h4 class="card-title"><b>Form Tambah Jurusan</b></h4>
+            <h4 class="card-title"><b>Form Tambah Divisi</b></h4>
           </div>
           <div class="card-body mx-5 my-3">
 
@@ -26,8 +26,8 @@
               <?php endif; ?>
 
               <div class="form-group mt-4">
-                <label for="jurusan">Nama jurusan</label>
-                <input type="text" id="jurusan" class="form-control <?= $validation->getError('jurusan') ? 'is-invalid' : ''; ?>" name="jurusan" placeholder="IPA, IPS" , value="<?= old('jurusan') ?? $oldInput['jurusan']  ?? '' ?>" required>
+                <label for="jurusan">Nama divisi</label>
+                <input type="text" id="jurusan" class="form-control <?= $validation->getError('jurusan') ? 'is-invalid' : ''; ?>" name="jurusan" placeholder="Pemasaran, Produksi" , value="<?= old('jurusan') ?? $oldInput['jurusan']  ?? '' ?>" required>
                 <div class="invalid-feedback">
                   <?= $validation->getError('jurusan'); ?>
                 </div>

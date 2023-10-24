@@ -4,7 +4,7 @@
          <thead class="text-primary">
             <th><b>No</b></th>
             <th><b>NIS</b></th>
-            <th><b>Nama Siswa</b></th>
+            <th><b>Nama Pegawai</b></th>
             <th><b>Jenis Kelamin</b></th>
             <th><b>Kelas</b></th>
             <th><b>Jurusan</b></th>

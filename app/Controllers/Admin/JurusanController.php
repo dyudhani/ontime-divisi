@@ -52,7 +52,7 @@ class JurusanController extends ResourceController
     {
         $data = [
             'ctx' => 'kelas',
-            'title' => 'Tambah Data Jurusan',
+            'title' => 'Tambah Data Divisi',
         ];
         return view('/admin/jurusan/create', $data);
     }
@@ -71,7 +71,7 @@ class JurusanController extends ResourceController
         ])) {
             $data = [
                 'ctx' => 'kelas',
-                'title' => 'Tambah Data Jurusan',
+                'title' => 'Tambah Data Divisi',
                 'validation' => $this->validator,
                 'oldInput' => $this->request->getVar()
             ];
@@ -114,7 +114,7 @@ class JurusanController extends ResourceController
         $data = [
             'ctx' => 'kelas',
             'data' => $jurusan,
-            'title' => 'Edit Jurusan',
+            'title' => 'Edit Divisi',
         ];
         return view('/admin/jurusan/edit', $data);
     }
@@ -142,7 +142,7 @@ class JurusanController extends ResourceController
 
             $data = [
                 'ctx' => 'kelas',
-                'title' => 'Edit Jurusan',
+                'title' => 'Edit Divisi',
                 'data' => $jurusan,
                 'validation' => $this->validator,
                 'oldInput' => $this->request->getRawInput()

@@ -29,11 +29,11 @@
                </div>
                <div class="card-body">
                   <div class="row">
-                     <div class="col-md-6">
+                     <div class="col-md-12">
                         <div class="card">
                            <div class="card-body">
-                              <h4 class="text-primary"><b>Data Siswa</b></h4>
-                              <p>Total jumlah siswa : <b><?= count($siswa); ?></b>
+                              <h4 class="text-primary"><b>Data Pegawai</b></h4>
+                              <p>Total jumlah pegawai : <b><?= count($siswa); ?></b>
                                  <br>
                                  <a href="<?= base_url('admin/siswa'); ?>">Lihat data</a>
                               </p>
@@ -56,9 +56,9 @@
                               </button>
                               <hr>
                               <br>
-                              <h4 class="text-primary"><b>Generate per kelas</b></h4>
+                              <h4 class="text-primary"><b>Generate per tim</b></h4>
                               <select name="id_kelas" id="kelasSelect" class="custom-select mb-3">
-                                 <option value="">--Pilih kelas--</option>
+                                 <option value="">--Pilih tim--</option>
                                  <?php foreach ($kelas as $value) : ?>
                                     <option id="idKelas<?= $value['id_kelas']; ?>" value="<?= $value['id_kelas']; ?>">
                                        <?= $value['kelas'] . ' ' . $value['jurusan']; ?>
@@ -72,7 +72,7 @@
                                     </div>
                                     <div class="col">
                                        <div class="text-start">
-                                          <h4 class="d-inline">Generate per kelas</h4>
+                                          <h4 class="d-inline">Generate per tim</h4>
                                        </div>
                                        <div id="progressKelas" class="d-none">
                                           <span id="progressTextKelas"></span>
@@ -91,7 +91,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="col-md-6">
+                     <!-- <div class="col-md-6">
                         <div class="card">
                            <div class="card-body">
                               <h4 class="text-success"><b>Data Guru</b></h4>
@@ -120,11 +120,10 @@
                               </button>
                               <br>
                               <br>
-                              <!-- <p>Untuk generate qr code per masing-masing guru kunjungi <a href="<?= base_url('admin/guru'); ?>">data guru</a></p> -->
                            </div>
                         </div>
                         <p class="text-danger"><i class="material-icons" style="font-size: 16px;">warning</i> File image QR Code tersimpan di [folder website]/public/uploads/</p>
-                     </div>
+                     </div> -->
                   </div>
                </div>
             </div>

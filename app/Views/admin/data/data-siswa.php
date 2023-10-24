@@ -15,14 +15,14 @@
                </div>
             <?php endif; ?>
             <a class="btn btn-primary ml-3 pl-3 py-3" href="<?= base_url('admin/siswa/create'); ?>">
-               <i class="material-icons mr-2">add</i> Tambah data siswa
+               <i class="material-icons mr-2">add</i> Tambah data pegawai
             </a>
             <div class="card">
                <div class="card-header card-header-tabs card-header-primary">
                   <div class="nav-tabs-navigation">
                      <div class="row">
                         <div class="col-md-2">
-                           <h4 class="card-title"><b>Daftar Siswa</b></h4>
+                           <h4 class="card-title"><b>Daftar Pegawai</b></h4>
                            <p class="card-category">Angkatan 2022/2023</p>
                         </div>
                         <div class="col-md-4">
@@ -53,7 +53,7 @@
                         </div>
                         <div class="col-md-6">
                            <div class="nav-tabs-wrapper">
-                              <span class="nav-tabs-title">Jurusan:</span>
+                              <span class="nav-tabs-title">Divisi:</span>
                               <ul class="nav nav-tabs" data-tabs="tabs">
                                  <li class="nav-item">
                                     <a class="nav-link active" onclick="jurusan = null; trig()" href="#" data-toggle="tab">
@@ -76,7 +76,7 @@
                   </div>
                </div>
                <div id="dataSiswa">
-                  <p class="text-center mt-3">Daftar siswa muncul disini</p>
+                  <p class="text-center mt-3">Daftar pegawai muncul disini</p>
                </div>
             </div>
          </div>

@@ -9,8 +9,8 @@
                   <div class="row justify-content-between">
                      <div class="col">
                         <div class="pt-3 pl-3">
-                           <h4><b>Daftar Kelas</b></h4>
-                           <p>Silakan pilih kelas</p>
+                           <h4><b>Daftar Tim</b></h4>
+                           <p>Silakan pilih tim</p>
                         </div>
                      </div>
                   </div>
@@ -48,8 +48,8 @@
             <div class="row justify-content-between">
                <div class="col-auto me-auto">
                   <div class="pt-3 pl-3">
-                     <h4><b>Absen Siswa</b></h4>
-                     <p>Daftar siswa muncul disini</p>
+                     <h4><b>Absen Pegawai</b></h4>
+                     <p>Daftar pegawai muncul disini</p>
                   </div>
                </div>
             </div>
@@ -63,7 +63,7 @@
          <div class="modal-content">
             <form id="formTambahKelas" action="#">
                <div class="modal-header">
-                  <h5 class="modal-title" id="modalUbahKehadiran">Tambah Data Kelas</h5>
+                  <h5 class="modal-title" id="modalUbahKehadiran">Tambah Data Tim</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                      <span aria-hidden="true">&times;</span>
                   </button>
@@ -71,9 +71,9 @@
                <div class="modal-body">
                   <div class="container-fluid">
                      <div class="form-group mt-2">
-                        <label for="kelas">Kelas</label>
+                        <label for="kelas">Tim</label>
                         <select class="custom-select" id="kelas" name="kelas" required>
-                           <option value="">--Pilih kelas--</option>
+                           <option value="">--Pilih tim--</option>
                            <option value="X">X</option>
                            <option value="XI">XI</option>
                            <option value="XII">XII</option>

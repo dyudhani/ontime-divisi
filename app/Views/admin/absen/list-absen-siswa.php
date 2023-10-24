@@ -2,8 +2,8 @@
     <div class="row">
         <div class="col-auto me-auto">
             <div class="pt-3 pl-3">
-                <h4><b>Absen Siswa</b></h4>
-                <p>Daftar siswa muncul disini</p>
+                <h4><b>Absen Pegawai</b></h4>
+                <p>Daftar pegawai muncul disini</p>
             </div>
         </div>
         <div class="col">
@@ -26,7 +26,7 @@
                 <thead class="text-primary">
                     <th><b>No.</b></th>
                     <th><b>NIS</b></th>
-                    <th><b>Nama Siswa</b></th>
+                    <th><b>Nama Pegawai</b></th>
                     <th><b>Kehadiran</b></th>
                     <th><b>Jam masuk</b></th>
                     <th><b>Jam pulang</b></th>

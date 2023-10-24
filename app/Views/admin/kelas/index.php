@@ -21,7 +21,7 @@
                 <div class="nav-tabs-navigation">
                   <div class="row">
                     <div class="col">
-                      <h4 class="card-title"><b>Daftar Kelas</b></h4>
+                      <h4 class="card-title"><b>Daftar Tim</b></h4>
                       <p class="card-category">Angkatan 2022/2023</p>
                     </div>
                     <div class="col-auto">
@@ -29,7 +29,7 @@
                         <ul class="nav nav-tabs" data-tabs="tabs">
                           <li class="nav-item">
                             <a class="nav-link" id="tabBtn" onclick="removeHover()" href="<?= base_url('admin/kelas/new'); ?>">
-                              <i class="material-icons">add</i> Tambah data kelas
+                              <i class="material-icons">add</i> Tambah data tim
                               <div class="ripple-container"></div>
                             </a>
                           </li>
@@ -46,7 +46,7 @@
                 </div>
               </div>
               <div id="dataKelas">
-                <p class="text-center mt-3">Daftar kelas muncul disini</p>
+                <p class="text-center mt-3">Daftar tim muncul disini</p>
               </div>
             </div>
           </div>
@@ -56,7 +56,7 @@
                 <div class="nav-tabs-navigation">
                   <div class="row">
                     <div class="col">
-                      <h4 class="card-title"><b>Daftar Jurusan</b></h4>
+                      <h4 class="card-title"><b>Daftar Divisi</b></h4>
                       <p class="card-category">Angkatan 2022/2023</p>
                     </div>
                     <div class="col-auto">
@@ -64,7 +64,7 @@
                         <ul class="nav nav-tabs" data-tabs="tabs">
                           <li class="nav-item">
                             <a class="nav-link" id="tabBtn2" onclick="removeHover()" href="<?= base_url('admin/jurusan/new'); ?>">
-                              <i class="material-icons">add</i> Tambah data jurusan
+                              <i class="material-icons">add</i> Tambah data divisi
                               <div class="ripple-container"></div>
                             </a>
                           </li>
@@ -81,7 +81,7 @@
                 </div>
               </div>
               <div id="dataJurusan">
-                <p class="text-center mt-3">Daftar jurusan muncul disini</p>
+                <p class="text-center mt-3">Daftar divisi muncul disini</p>
               </div>
             </div>
           </div>
